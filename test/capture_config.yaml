@@ -1,0 +1,17 @@
+short:
+      - project: v45
+        outputdir: tmp
+      - project: w48
+
+compute:
+      - project: v45
+      - project: w48
+
+gdata:
+      - mount: gdata1a
+        project: v45
+      - mount: gdata3
+        project: w48
+---
+outputdir: dumpdir
+datestamp: datetime.now().strftime('%F')

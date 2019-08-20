@@ -1,0 +1,4 @@
+cmds:
+    short: 'short_files_report -G {project} > {outputdir}/{datestamp}.{project}.short.dump'
+    gdata: '{mount}_files_report -G {project} > {outputdir}/{datestamp}.{project}.{mount}.dump'
+    compute: 'nci_account -vv -P {project} > {outputdir}/{datestamp}.{project}.SU.dump'
